@@ -11,7 +11,20 @@
 3. > ```haskell
    > area r = pi * r ^ 2
 
-4. Não entendi.<!-- -->
+4. a. **`one x = 1`**
+
+    > ```haskell
+    > one :: x -> Int
+
+   b. **`apply f x = f x`**
+
+    > ```haskell
+    > apply :: (x -> y) -> x -> y
+
+   c. **`compose f g x = f (g x)`**
+
+    > ```haskell
+    > compose :: (x -> y) -> (z -> x) -> z -> y
 
 5. <!-- -->
    a. **``3 `div` 1 * 3``**
@@ -38,7 +51,7 @@
     > Falsa
 
 8. a. **`(3 == --3) && True`**
-    > 
+    > Inválida, pois `--` é comentário em linha, então dá erro na expressão, pois nada depois de `--` é considerado
 
    b. **`1 && 1 == 2`**
     > Inválida, pois `1` é numeral, não booleano.
